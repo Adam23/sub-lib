@@ -1,0 +1,108 @@
+@media (min-width: $screen-sm-min) {
+  .global-nav {
+    height: 70px;
+    .navbar-brand {
+      width: 125px;
+      height: 70px;
+      @include background-size(106px 35px);
+      margin-top: 0;    
+    }
+    .navbar-nav > li > a {
+      padding-left: 5px;
+      padding-right: 15px;
+      &:hover {
+        background: none;
+      }
+      &:focus {
+        background: none;
+      }
+    }
+    .signup-link a {
+      margin: 10px 15px 10px 14px;
+      padding-top: 4px;
+      padding-bottom: 4px;
+      border-radius: 4px;
+      border: 1px solid rgba(255,255,255,.8);
+    }
+    .dropdown .dropdown-menu {
+      > li > a {
+        color: rgba(255,255,255,.8);
+        &:hover {
+          color: #FFF;
+        }
+        &:focus, &:active {
+          color: #FFF;
+        }
+      }
+    }
+    .dropdown.account-settings{
+      a.dropdown-toggle {
+        padding-left: 15px;
+      }
+    }
+    .dropdown.lang-setting{
+      a.dropdown-toggle {
+        padding-left: 10px;
+      }    
+    }
+  }
+  .header-shadow {
+    height: 100px;
+  }
+
+  #welcome-index .masthead .slogan {
+    text-align: left;
+    h1 {
+      font-size: 28px;
+      letter-spacing: 16px;
+    }
+    p {
+      font-size: 18px;
+    }
+    .brand img {
+      height: 65px;
+    }
+  }
+}
+
+@media (min-width: $screen-md-min) {
+  #welcome-index .masthead .slogan {
+    margin: 10px 0 0 80px;
+  }
+  .global-footer .footer-nav li.hotline {
+    margin-bottom: 27px;
+  }
+  .global-footer .powered-by img {
+    max-width: 75px;
+  }
+  .global-footer .footer-contacts .footer-nav li {
+    display: block;
+  }
+
+  #assets-index {
+    .left-col {
+      margin-right: -1px;
+      padding-right: 30px;
+      margin-bottom: 0;
+      padding-bottom: 0;
+      border-bottom: none;
+      border-right: 1px solid #DDD;
+    }
+    .right-col {
+      padding-left: 30px;
+      border-left: 1px solid #DDD;
+    }
+  }
+}
+
+@media (min-width: $screen-lg-min) {
+  .global-nav .navbar-nav > li > a {
+    padding-left: 15px;
+  }
+}
+
+@media (max-width: 360px) {
+  .footer-nav .fa {
+    display: none;
+  }
+}

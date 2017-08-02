@@ -1,0 +1,26 @@
+.history-pages {
+  .nav-pills {
+    margin-bottom: 30px;
+  }
+  .table {
+    th, td {
+      word-break: break-word;
+      font-size: 14px;
+    }
+    .col-txid {
+      width: 30%;
+    }
+  }
+}
+#history-transactions {
+  #transactions {
+    th {
+      text-transform: capitalize;
+    }
+
+    th, a {
+      cursor: pointer;
+    }
+  }
+}
+

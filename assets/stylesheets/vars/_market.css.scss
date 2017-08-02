@@ -1,0 +1,41 @@
+/* peatio exchange site vars
+-------------------------------------------------------------- */
+
+$gutter: 2px;
+$min-width: 1260px;
+$min-height: 700px;
+
+$navbar-height: $navbar-height + 1px;
+$panel_table_header_high: 37px;
+$gutter-2x: $gutter * 2;
+$gutter-3x: $gutter * 3;
+$gutter-4x: $gutter * 4;
+$gutter-5x: $gutter * 5;
+$gutter-6x: $gutter * 6;
+
+$side-width: 520px;
+$bottom-height: 300px;
+
+$entry-width: $side-width / 2 - 1;
+$entry-height: 176px;
+
+$ticker-width: $side-width;
+$ticker-height: 56px;
+
+$depths-width: $side-width;
+$depths-height: $bottom-height - $entry-height - $gutter;
+
+$market-trades-width: 340px;
+$market-trades-height: $bottom-height;
+
+$my-orders-width: $min-width - $market-trades-width - $side-width - $gutter-4x;
+$my-orders-height: $bottom-height;
+
+$order-book-width: $side-width - $gutter-2x;
+$order-book-height: $min-height - $bottom-height - $navbar-height - $gutter-3x;
+
+$market-list-width: $min-width - $side-width - $gutter-3x;
+$market-list-height: $bottom-height;
+
+$candlestick-width: $min-width - $side-width - 20;
+$candlestick-height: $min-height - $bottom-height - $navbar-height;

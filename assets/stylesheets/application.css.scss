@@ -1,0 +1,199 @@
+@import "bourbon";
+
+@import 'vars/bootstrap';
+
+@import 'bootstrap';
+@import 'bootstrap-switch.min';
+
+@import 'vars/basic';
+@import 'vars/custom';
+
+@import "font-awesome-sprockets";
+@import 'font-awesome';
+@import 'iconfonts';
+
+@import 'layouts/basic';
+@import 'layouts/header';
+@import 'layouts/footer';
+
+@import 'features/welcome';
+@import 'features/users';
+@import 'features/market';
+@import 'features/market_chart';
+@import 'features/assets';
+@import 'features/history';
+@import 'features/funds';
+@import 'features/documents';
+@import 'features/simple_captcha';
+@import 'features/custom';
+@import 'features/sprites';
+@import 'features/docs';
+@import 'features/oauth';
+
+@import 'layouts/responsive';
+
+/* layouts
+-------------------------------------------------------------- */
+html, body {
+  height: 100%;
+  font-family: 'lucida grande', 'lucida sans unicode', lucida, helvetica, 'Hiragino Sans GB', 'Microsoft YaHei', 'WenQuanYi Micro Hei', sans-serif;
+}
+
+#alert-topbar {
+  position: absolute;
+  width: 100%;
+  z-index: 9999;
+  text-align: center;
+  .alert {
+    margin-bottom: 0;
+    border-radius: 0;
+  }
+}
+
+#setting_list.table {
+  margin-bottom: 0px;
+  tr:first-of-type { td { border-top: 0px; } }
+
+  .hint {
+    display: inline;
+    color: #777;
+    font-size: .7em;
+    font-weight: bold;
+    padding-left: 12px;
+  }
+
+  .link {
+    display: inline;
+    color: #777;
+    font-size: .7em;
+    font-weight: bold;
+    padding-left: 12px;
+  }
+
+  .btn-block {
+    width: 90%;
+  }
+}
+
+#wrap {
+  height: auto !important;
+  min-height: 100%;
+
+  & + iframe { display: none; }
+
+  #content {
+    border-left: 1px solid $content-split;
+    padding-top: 15px;
+
+
+    #setting_list.table {
+      margin-bottom: 0px;
+      tr:first-of-type { td { border-top: 0px; } }
+
+      .hint {
+        color: #777;
+        font-size: .7em;
+        text-align: center;
+        padding-top: 8px;
+      }
+    }
+
+    .list-group {
+      margin-right: -15px;
+      margin-bottom: 0px;
+
+      .list-group-item {
+        border-left: 0px;
+        border-right: 0px;
+
+        &.split {
+          padding-bottom: 8px;
+
+          & > * {
+            margin-top: 4px;
+            margin-bottom: 0px;
+          }
+        }
+
+        &:first-of-type {
+          padding-top: 0px;
+          border-top: 0px;
+        }
+
+        &:last-of-type {
+          border-bottom: 0px;
+        }
+      }
+    }
+  }
+}
+
+/* ticker
+------------------------------------------- */
+.dl-horizontal.dl-ticker {
+  margin-bottom: 10px;
+  line-height: 40px;
+
+  dt {
+    width: 38px;
+    cursor: pointer;
+    color: $gray-light;
+  }
+
+  dd {
+    margin-top: -4px;
+    font-size: 20px;
+    margin-left: 42px;
+    font-family: monospace;
+  }
+}
+
+/* simple_form mix
+------------------------------------------------------- */
+form.simple_form {
+  .form-submit, .form-group {
+    input[type=submit] + a, a + a {
+      margin-right: $btn-gutter-width;
+    }
+  }
+}
+/* flash message element
+
+------------------------------------------------------- */
+.flash-alert, .flash-notice {
+  margin-top: 4px;
+  margin-bottom: 4px;
+  h5 i.fa { margin-right: 10px; }
+}
+
+/* decimal
+------------------------------------------------------- */
+span.decimal {
+  color: #555;
+  font-family: $font-family-monospace;
+  font-size: 1em;
+  small { font-size: 0.8em; color: #555; }
+}
+
+@import 'layouts/custom';
+
+/* word-break in Settings page
+------------------------------------------------------- */
+#settings-index{
+  #guide{
+    h3{
+      word-wrap: break-word;
+      word-break: break-all;
+    }
+  }
+}
+
+#inner_header {
+  font-size: 16px;
+  line-height: 37px;
+  font-weight: normal;
+}
+
+#payment_address_tip_modal > .modal-dialog {
+  margin-top: 190px;
+}

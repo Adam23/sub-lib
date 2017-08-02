@@ -1,0 +1,6 @@
+<div id='depths-tooltips-wrapper'>
+<table id='depths-tooltips-table'>
+  <tr><th><%= gon.i18n.chart.price %></th><td class='text-right'><%= @format @point.x %></td></tr>
+  <tr><th><%= gon.i18n.chart.depth %></th><td class='text-right'><%= @format @point.y %></td></tr>
+</table>
+</div>

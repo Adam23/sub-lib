@@ -1,0 +1,150 @@
+$panel-margin-bottom: 60px;
+
+#assets-index {
+  .hero {
+    text-align: center;
+    max-width: 720px;
+    margin: 30px auto 50px;
+    h2 {
+      font-size: 27px;
+      margin: 20px 0;
+      i { vertical-align: middle; margin-right: 10px; }
+    }
+    p {
+      color: #999;
+      font-size: 18px;
+      line-height: 1.6;
+    }
+  }
+  .panel {
+    min-height: 285px;
+    margin: 0 20px $panel-margin-bottom;
+  }
+  .panel-body {
+    text-align: left;
+    padding: 30px;
+    .total {
+      .lbl {
+        font-size: 16px;
+        font-weight: normal;
+        color: $footer-color-light;
+      }
+      .num {
+        font-size: 32px;
+      }
+    }
+    .bank-account {
+      width: 100%;
+      margin: 15px;
+      font-size: 14px;
+      td:first-child {
+        width: 70px;
+        vertical-align: top;
+      }
+      td:last-child {
+        font-weight: bold;
+      }
+    }
+    .table {
+      .wallet a {
+        word-break: break-word;
+      }
+    }
+  }
+
+  hr {
+    margin-top: 6px;
+  }
+
+  .assets {
+    margin: 0 0 10px 0;
+
+    .title {
+      width: 200px;
+    }
+
+    .currency {
+      font-weight: bold;
+      color: #fdbb00;
+    }
+  }
+
+  .proof {
+    color: #999;
+    font-size: 14px;
+    .json {
+      margin-top: 20px;
+      pre {
+        font-size: .625em;
+        color: #777;
+        background-color: #F7FBFD;
+        max-height: 80px;
+        overflow: auto;
+      }
+      h5, .assets {
+        font-size: 14px;
+      }
+    }
+
+    .timestamp {
+      margin-top: 30px;
+      color: #fdbb00;
+      text-align: center;
+    }
+  }
+
+  .proof-bottom {
+    text-align: center;
+  }
+  
+  .assets-proof {
+    .panel {
+      position: relative;
+      &:before {
+        content: '';
+        height: $panel-margin-bottom;
+        width: 3px;
+        background-color: #ddd;
+        position: absolute;
+        left: 50%;
+        top: -$panel-margin-bottom;
+      }
+    }
+  }
+  .left-col {
+    margin-bottom: 30px;
+    border-bottom: 1px solid #DDD;
+    padding-bottom: 30px;
+  }
+  .currency-icon {
+    position: absolute;
+    top: -60px;
+    left: -45px;
+    img {
+      max-width: 60px;
+    }
+  }
+  .alert {
+    margin-bottom: 0;
+    font-size: 14px;
+    padding: 10px;
+    &.alert-info {
+      background-color: #E9F3F9;
+    }
+  }
+  .signin-link {
+    margin: 50px 0 0;
+    text-align: center;
+    a {
+      color: #999;
+      padding: 10px 30px;
+      display: inline-block;
+      border: 1px solid #ccc;
+      &:hover {
+        color: #333;
+        border-color: #aaa;
+        text-decoration: none;
+      }
+    }
+  }
+}

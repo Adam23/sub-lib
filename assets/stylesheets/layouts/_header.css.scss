@@ -1,0 +1,236 @@
+/* auto header dropdown menu active
+------------------------------------------------------ */
+
+.global-nav {
+  margin: 0 0 30px;
+  background-color: $global-nav-bg;
+  .navbar-nav {
+    margin-top: 13px;
+    > li > a {
+      color: rgba(255,255,255,.8);
+      line-height: 18px;
+      &:hover {
+        color: #fff;
+        border-color: #fff;
+        background: rgba(0,0,0,.05);
+      }
+      &:focus {
+        background: rgba(0,0,0,.05);
+      }
+    }
+  }
+
+  .navbar-collapse.in {
+    background-color: rgba(0, 122, 199, .9);
+  }
+
+  .dropdown-menu .sub-menu {
+      left: 100%;
+      position: absolute;
+      top: 0;
+      visibility: hidden;
+      margin-top: -1px;
+  }
+
+  .dropdown-menu li:hover .sub-menu {
+      visibility: visible;
+  }
+
+  .dropdown:hover .dropdown-menu {
+      display: block;
+  }
+
+  .nav-tabs .dropdown-menu, .nav-pills .dropdown-menu, .navbar .dropdown-menu {
+      margin-top: 0;
+  }
+
+  .navbar .sub-menu:before {
+      border-bottom: 7px solid transparent;
+      border-left: none;
+      border-right: 7px solid rgba(0, 0, 0, 0.2);
+      border-top: 7px solid transparent;
+      left: -7px;
+      top: 10px;
+  }
+  .navbar .sub-menu:after {
+      border-top: 6px solid transparent;
+      border-left: none;
+      border-right: 6px solid #fff;
+      border-bottom: 6px solid transparent;
+      left: 10px;
+      top: 11px;
+      left: -6px;
+  }
+  .navbar-nav.navbar-right > .account-balance > a {
+    border: 1px solid $navbar-default-link-color;
+    border-radius: 5px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    margin-top: 18px;
+    margin-bottom: 18px;
+    > span { margin-right: 5px; }
+  }
+
+  .navbar-brand {
+    width: 80px;
+    background-image: image-url('/logos/logo.svg');
+    @include background-size(64px 50px);
+    height: 35px;
+    background-repeat: no-repeat;
+    background-position: 15px 14px;
+    @include hide-text;
+    .fa { display: none; }
+
+    &.en {
+      width: 160px;
+      @include background-size(135px 50px);
+    }
+  }
+
+  .notices{
+    overflow: hidden;
+    position: absolute;
+    color: #FFF;
+    opacity: 0.6;
+    margin-bottom: 80px;
+    line-height: 40px;
+    font-size: 14px;
+    margin-left: 83px;
+    margin-top: 17px;
+    color: #FFF;
+    i{
+      float: left;
+      line-height: 40px;
+    }
+    & > span{
+      float: left;
+      &.more{
+        margin-right: 60px;
+        font-size: 14px;
+        margin-left: 20px;
+        a{
+          color: #FFF;
+        }
+      }
+    }
+    p{
+      float: left;
+      margin-left: 6px;
+      margin-bottom: 0px;
+      a{
+        color: #FFF;
+      }
+
+      span.notice-date {
+        margin-left: 4px;
+        font-size: 12px;
+        opacity: 0.4;
+        font-style: italic;
+      }
+    }
+  }
+
+  .navbar-toggle {
+    &:hover,
+    &:focus {
+      background-color: rgba(0,0,0,.06);
+      border-color: rgba(0,0,0,.04);
+    }
+  }
+  .navbar-toggle .icon-bar {
+    background-color: #fff;
+  }
+}
+
+/* account balance summary with header
+------------------------------------------------------ */
+header .account-balance {
+
+  .dropdown-menu {
+    padding-bottom: 0;
+  }
+
+  .account-wrap {
+    width: 360px;
+    padding: 8px;
+    border-bottom: 1px solid $gray-light; 
+  }
+
+  hr {
+    margin-top: 2px;
+    margin-bottom: 0px;
+    border-color: $gray-light;
+    border-style: dashed;
+  }
+
+  i.fa, span.total-title {
+    color: $gray-light;
+  }
+
+  i.fa.fa-plus {
+    margin: 0px 0px;
+  }
+
+  span.account-name {
+    color: $brand-primary;
+    margin-top: -24px;
+    padding-right: 10px;
+    display: block;
+    font-size: 18px;
+    background-color: white;
+    text-align: right;
+  }
+
+  span.balance, span.locked {
+    color: $brand-primary;
+  }
+
+  span.total {
+    font-size: 18px;
+  }
+}
+
+.header-shadow {
+  height: 70px;
+}
+
+/* account settings summary with header
+------------------------------------------------------ */
+.global-nav .dropdown {
+  .dropdown-toggle{
+    border-radius: 5px 5px 0 0;
+    &:hover {
+      background: #0160A4;
+    }
+  }
+  .dropdown-menu {
+    width: 100%;
+    min-width: 0px;
+    background: #0160A4;
+    border: none;
+    > li > a {
+      color: rgba(255,255,255,.8);
+      padding: 3px 16px;
+      &:hover {
+        color: #fff;
+        border-color: #fff;
+        background: rgba(0,0,0,.05);
+      }
+      &:focus, &:active {
+        background: rgba(0,0,0,.05);
+      }
+    }
+  }
+  .fa-user{
+    width: 15px;
+  }
+  .lang-icon{
+    height: 16px;
+  }
+  &.open > a,
+  &.open > a:hover,
+  &.open > a:focus {
+    background: #0160A4;
+  }
+}
+

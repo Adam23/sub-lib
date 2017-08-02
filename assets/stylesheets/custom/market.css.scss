@@ -1,0 +1,28 @@
+header {
+  a.navbar-brand {
+    height: 24px;
+    margin: 0px;
+    margin-top: 3px;
+    padding: 0px;
+    padding-top: 3px;
+    padding-left: 33px;
+    background-repeat: no-repeat;
+    background-image: url(/logos/thin-white.png);
+  }
+}
+
+[data-lang=en] {
+  #ask_entry, #bid_entry {
+    span.input-group-addon {
+      text-align: right;
+      min-width: 110px !important;
+    }
+  }
+}
+[data-lang=zh-cn] {
+  #ask_entry, #bid_entry {
+    span.input-group-addon {
+      min-width: 50px !important;
+    }
+  }
+}

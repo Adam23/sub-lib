@@ -1,0 +1,110 @@
+// SASS variable overrides must be declared before loading up Active Admin's styles.
+//
+// To view the variables that Active Admin provides, take a look at
+// `app/assets/stylesheets/active_admin/mixins/_variables.css.scss` in the
+// Active Admin source.
+//
+// For example, to change the sidebar width:
+// $sidebar-width: 242px;
+
+// Active Admin's got SASS!
+@import "active_admin/mixins";
+@import "active_admin/base";
+
+// Overriding any non-variable SASS must be done after the fact.
+// For example, to change the default status-tag color:
+//
+//   .status_tag { background: #6090DB; }
+
+.precision-table {
+  th, td {
+    text-align: right;
+  }
+  td {
+    font-size: 14px;
+    font-family: monospace;
+
+  }
+}
+
+td.precision {
+  font-size: 14px;
+  font-family: monospace;
+}
+
+th.precision, td.precision {
+  & > a { text-align: right; }
+  text-align: right;
+}
+
+tr.row.precision {
+  th, td { text-align: right; }
+  font-size: 14px;
+  font-family: monospace;
+}
+
+tr.odd, tr.even {
+  &.withdraw {
+    td.col {
+      background-color: #f4f5f5;
+    }
+  }
+  &.deposit {
+    td.col {
+      background-color: #ffffff;
+    }
+  }
+}
+
+th.col-amount, td.col-amount, 
+th.col-cost, td.col-cost,
+th.col-fee, td.col-fee, 
+th.col-income, td.col-income, 
+th.col-outgo, td.col-outgo {
+  & > a { text-align: right; }
+  text-align: right;
+}
+
+tr.row.bold > td {
+  font-weight: 600;
+}
+
+tr.row.clip > td {
+  .btn {
+    &:focus { outline: none; }
+    left: 55px;
+    margin-left: 14px;
+    border-radius: 5px;
+    padding-top: 1px;
+    padding-bottom: 0px;
+    padding-right: 12px;
+    padding-left: 12px;
+    margin-top: -2px;
+    font-size: 10px;
+    position: absolute;
+    left: 400px;
+  }
+}
+
+#active_admin_content #main_content_wrapper #main_content {
+    margin-right: 400px;
+}
+
+#active_admin_content #sidebar {
+    float: left;
+    width: 370px;
+    margin-left: -370px;
+}
+
+.sidebar_section input[type=text], .sidebar_section input[type=password],
+.sidebar_section input[type=email], .sidebar_section input[type=url],
+.sidebar_section input[type=tel], .sidebar_section textarea {
+    width: calc(100% - 20px);
+}
+.sidebar_section select {
+    width: 100%;
+}
+
+.panel_contents ul:last-child {
+  margin: 0 1.5em 0 0;
+}
